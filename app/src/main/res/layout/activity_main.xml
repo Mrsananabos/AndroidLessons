@@ -60,7 +60,7 @@
                   android:background="@color/colorPrimaryGrey"
                   android:text="@string/recommended_bar_text"
                   android:textColor="@android:color/darker_gray"
-                  android:textSize="20sp"/>
+                  android:textSize="20sp" android:paddingStart="20dp"/>
 
         <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
             <LinearLayout android:orientation="vertical"
