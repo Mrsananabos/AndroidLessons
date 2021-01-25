@@ -47,10 +47,10 @@
             android:layout_marginBottom="48dp"
             android:background="@drawable/rectangle_background"
             android:gravity="center"
-            android:text="@string/change_location"
-            android:textColor="@android:color/white"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
+            android:text="@string/change_location"
+            android:textColor="@android:color/white"
             android:textSize="14sp" />
 
     </FrameLayout>
@@ -59,10 +59,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryGrey"
-        android:paddingHorizontal="25dp"
-        android:paddingStart="20dp"
-        android:paddingLeft="20dp"
-        android:paddingTop="22dp"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="20dp"
         android:text="@string/recommended_bar_text"
         android:textColor="@android:color/darker_gray"
         android:textSize="20sp" />
@@ -76,7 +74,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryGrey"
             android:orientation="vertical"
-            android:paddingHorizontal="25dp">
+            android:paddingHorizontal="24dp">
 
             <include layout="@layout/music_item" />
 
