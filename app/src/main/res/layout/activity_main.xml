@@ -76,19 +76,19 @@
             android:orientation="vertical"
             android:paddingHorizontal="24dp">
 
-            <include layout="@layout/music_item" />
+            <include layout="@layout/view_music_item" />
 
-            <include layout="@layout/music_item" />
+            <include layout="@layout/view_music_item" />
 
-            <include layout="@layout/music_item" />
+            <include layout="@layout/view_music_item" />
 
-            <include layout="@layout/music_item" />
+            <include layout="@layout/view_music_item" />
 
-            <include layout="@layout/music_item" />
+            <include layout="@layout/view_music_item" />
 
-            <include layout="@layout/music_item" />
+            <include layout="@layout/view_music_item" />
 
-            <include layout="@layout/music_item" />
+            <include layout="@layout/view_music_item" />
         </LinearLayout>
     </ScrollView>
 

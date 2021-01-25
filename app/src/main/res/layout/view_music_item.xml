@@ -15,7 +15,7 @@
         android:src="@drawable/icon_user" />
 
     <include
-        layout="@layout/music_desc_item"
+        layout="@layout/view_music_desc_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
