@@ -11,9 +11,9 @@
         android:layout_height="240dp">
 
         <ImageView
-            android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:scaleType="centerCrop"
             android:src="@drawable/main_pict" />
 
         <ImageView
@@ -24,9 +24,9 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="41dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="72dp"
+            android:gravity="center_vertical"
             android:text="@string/header_main_layout_text"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
