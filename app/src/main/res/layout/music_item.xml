@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    tools:ignore="MissingConstraints">
+    android:layout_height="wrap_content">
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1sp"
+        android:layout_height="1dp"
         android:background="@android:color/darker_gray" />
 
-    <LinearLayout
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/icon_user" />
+
+    <include
+        layout="@layout/music_desc_item"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:layout_marginLeft="72dp"
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/icon_user" />
+        android:layout_marginTop="4dp" />
 
-        <include layout="@layout/music_desc_item" />
-
-    </LinearLayout>
-</LinearLayout>
+</FrameLayout>
