@@ -4,8 +4,6 @@
     <string name="recommended_bar_text">RECOMMENDED</string>
     <string name="singer_name">SINGER NAME</string>
     <string name="name_concert">CONCERTS BROOKLYN</string>
-    <string name="date">date</string>
-    <string name="name_sing">name of sing</string>
-    <string name="separator">"\u2022"</string>
+    <string name="date">date \u2022 name of sing</string>
     <string name="change_location">CHANGE LOCATION</string>
 </resources>
