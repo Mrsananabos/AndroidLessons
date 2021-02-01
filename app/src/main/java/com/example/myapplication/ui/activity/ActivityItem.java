@@ -1,13 +1,15 @@
 package com.example.myapplication.ui.activity;
 
 import android.os.Bundle;
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.myapplication.R;
 
 
 public class ActivityItem extends AppCompatActivity {
 
-    public static final String EXTRA_ID = "id";
+    public static final String SINGER_NAME = "singer_name";
+    public static final String SONG_NAME = "song_name";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +21,9 @@ public class ActivityItem extends AppCompatActivity {
     }
 
     private void initData() {
-        String name = getIntent().getExtras().getString(EXTRA_ID);
-//        ((TextView)findViewById(R.id.tvName)).setText(name);
+        String singerName = getIntent().getExtras().getString(SINGER_NAME);
+        String songName = getIntent().getExtras().getString(SONG_NAME);
+        ((TextView)findViewById(R.id.singerName)).setText(singerName);
+        ((TextView)findViewById(R.id.songName)).setText(songName);
     }
 }

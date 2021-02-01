@@ -54,6 +54,7 @@
                       android:layout_width="wrap_content"
                       android:layout_height="20dp"
                       android:text="@string/view_sing_item_header2"
+                      android:layout_gravity="center_horizontal"
                       android:textColor="@color/colorTextGrey"
                       android:textSize="15dp"
                       android:layout_marginTop="30dp"/>
