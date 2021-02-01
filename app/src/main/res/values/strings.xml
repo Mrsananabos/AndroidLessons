@@ -6,4 +6,8 @@
     <string name="name_concert">CONCERTS BROOKLYN</string>
     <string name="date">date \u2022 name of sing</string>
     <string name="change_location">CHANGE LOCATION</string>
+    <string name="view_sing_item_header1">PLAYING FROM PLAYLIST</string>
+    <string name="view_sing_item_header2">Deep Focus by Spotify</string>
+    <string name="start_time_sing">0:05</string>
+    <string name="end_time_sing">4:50</string>
 </resources>

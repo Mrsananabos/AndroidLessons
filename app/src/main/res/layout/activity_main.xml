@@ -1,96 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".ui.activity.MainActivity">
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="240dp">
-
-        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/main_pict" />
+            android:layout_height="240dp">
 
         <ImageView
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:padding="16dp"
-            android:src="@drawable/icon_menu_bar" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_pict"/>
+
+        <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="16dp"
+                android:src="@drawable/icon_menu_bar"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="56dp"
-            android:layout_marginLeft="72dp"
-            android:gravity="center_vertical"
-            android:text="@string/header_main_layout_text"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_marginLeft="72dp"
+                android:gravity="center_vertical"
+                android:text="@string/header_main_layout_text"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
 
         <TextView
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="@string/name_concert"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/name_concert"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginBottom="48dp"
-            android:background="@drawable/rectangle_background"
-            android:gravity="center"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:text="@string/change_location"
-            android:textColor="@android:color/white"
-            android:textSize="14sp" />
-
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="48dp"
+                android:background="@drawable/rectangle_background"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/change_location"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
     </FrameLayout>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryGrey"
-        android:paddingHorizontal="24dp"
-        android:paddingTop="20dp"
-        android:text="@string/recommended_bar_text"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryGrey"
-            android:orientation="vertical"
-            android:paddingHorizontal="24dp">
+            android:paddingHorizontal="24dp"
+            android:paddingTop="20dp"
+            android:text="@string/recommended_bar_text"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"/>
 
-            <include layout="@layout/view_music_item" />
-
-            <include layout="@layout/view_music_item" />
-
-            <include layout="@layout/view_music_item" />
-
-            <include layout="@layout/view_music_item" />
-
-            <include layout="@layout/view_music_item" />
-
-            <include layout="@layout/view_music_item" />
-
-            <include layout="@layout/view_music_item" />
-        </LinearLayout>
-    </ScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryGrey"/>
 
 </LinearLayout>
 
