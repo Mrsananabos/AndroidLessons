@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.myapplication.R;
@@ -37,9 +36,6 @@ public class AdapterItems extends RecyclerView.Adapter<AdapterItems.ViewHolderIt
     public void updateData(List<SampleData> data) {
         this.data = data;
         notifyDataSetChanged();
-        //notifyItemChanged();
-        //notifyItemInserted();
-        //notifyItemRemoved();
     }
 
     class ViewHolderItem extends RecyclerView.ViewHolder implements View.OnClickListener {
