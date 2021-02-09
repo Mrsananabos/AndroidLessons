@@ -1,6 +1,5 @@
 package com.example.myapplication.view.adapter;
 
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,11 +8,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.myapplication.R;
 import com.example.myapplication.model.SampleData;
-import com.example.myapplication.ui.activity.ActivityItem;
+import com.example.myapplication.ui.activity.MainActivity;
 
 import java.util.List;
 
-public class AdapterItems extends RecyclerView.Adapter<AdapterItems.ViewHolderItem> {
+public class AdapterMusicItems extends RecyclerView.Adapter<AdapterMusicItems.ViewHolderItem> {
 
     private List<SampleData> data;
 
@@ -58,10 +57,7 @@ public class AdapterItems extends RecyclerView.Adapter<AdapterItems.ViewHolderIt
 
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(view.getContext(), ActivityItem.class);
-            intent.putExtra(ActivityItem.SINGER_NAME, data.get(getAdapterPosition()).singerName);
-            intent.putExtra(ActivityItem.SONG_NAME, data.get(getAdapterPosition()).songName);
-            view.getContext().startActivity(intent);
+            ((MainActivity) view.getContext()).showDetails(data.get(getAdapterPosition()).singerName, data.get(getAdapterPosition()).songName);
         }
     }
 }
