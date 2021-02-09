@@ -34,7 +34,8 @@
                       android:layout_gravity="center_horizontal"/>
         </LinearLayout>
 
-        <ImageView android:layout_width="56dp"
+        <ImageView android:id="@+id/vsiMenuButton"
+                   android:layout_width="56dp"
                    android:layout_height="56dp"
                    android:padding="13dp"
                    android:layout_gravity="right|center_vertical"

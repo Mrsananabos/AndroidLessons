@@ -54,4 +54,5 @@ public class FragmentList extends Fragment {
         result.add(new SampleData("Би-2", "8 April", " Чёрное солнце"));
         return result;
     }
+
 }

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".ui.activity.MainActivity">
+
+    <FrameLayout android:layout_width="match_parent"
+                  android:layout_height="80dp"
+                  android:orientation="horizontal"
+                  android:background="@color/colorHeaderGrey">
+
+        <ImageView android:layout_width="56dp"
+                   android:layout_height="56dp"
+                   android:padding="8dp"
+                   android:layout_margin="10dp"
+                   android:src="@drawable/icon_menu_bar"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="56dp"
+                  android:gravity="center_vertical"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="86dp"
+                  android:text="@string/view_music_menu_header1"
+                  android:textColor="@android:color/white"
+                  android:textSize="23sp"/>
+    </FrameLayout>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorPrimaryGrey"
+              android:text="@string/view_music_menu_header2"
+              android:textColor="@color/colorTextGrey"
+              android:textSize="15dp"
+              android:paddingLeft="15dp"
+              android:paddingVertical="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+</LinearLayout>
+

@@ -3,6 +3,7 @@ package com.example.myapplication.ui.activity;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.myapplication.R;
+import com.example.myapplication.ui.fragment.menuItems.FragmentMenuItem;
 import com.example.myapplication.ui.fragment.musicItems.FragmentDetails;
 import com.example.myapplication.ui.fragment.musicItems.FragmentList;
 
@@ -34,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
                 .addToBackStack(null)
                 .commit();
 
+    }
+
+    public void showMenuDetails() {
+        FragmentMenuItem fragment = new FragmentMenuItem();
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.flContainer, fragment)
+                .addToBackStack(null)
+                .commit();
     }
 
 }
