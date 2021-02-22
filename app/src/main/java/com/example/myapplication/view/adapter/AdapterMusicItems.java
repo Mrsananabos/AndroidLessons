@@ -8,13 +8,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.myapplication.R;
-import com.example.myapplication.model.SampleData;
-import com.example.myapplication.ui.activity.MainActivity;
+import com.example.myapplication.model.Repo;
+import com.example.myapplication.view.ui.activity.MainActivity;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class AdapterMusicItems extends RecyclerView.Adapter<AdapterMusicItems.ViewHolderItemBase> {
-    private List<SampleData> data;
+    private List<Repo> data;
     private int TYPE_HEADER = 1;
     private int TYPE_ITEM = 2;
 
@@ -41,8 +43,10 @@ public class AdapterMusicItems extends RecyclerView.Adapter<AdapterMusicItems.Vi
         return data == null ? 0 : data.size();
     }
 
-    public void updateData(List<SampleData> data) {
-        this.data = data;
+    public void updateData(List<Repo> data) {
+        List<Repo> prepareData = new ArrayList<>(Arrays.asList(new Repo()));
+        prepareData.addAll(data);
+        this.data = prepareData;
         notifyDataSetChanged();
     }
 
@@ -67,13 +71,13 @@ public class AdapterMusicItems extends RecyclerView.Adapter<AdapterMusicItems.Vi
 
         @Override
         public void setData(int position) {
-            vmdSingerName.setText(data.get(position).singerName);
-            vmdDesc.setText(data.get(position).date + " \u2022 " + data.get(position).songName);
+            vmdSingerName.setText(data.get(position).name);
+            vmdDesc.setText("DATE \u2022 SONG NAME");
         }
 
         @Override
         public void onClick(View view) {
-            ((MainActivity) view.getContext()).showDetails(data.get(getAdapterPosition()).singerName, data.get(getAdapterPosition()).songName);
+            ((MainActivity) view.getContext()).showDetails(data.get(getAdapterPosition()).name, "DESC SONG");
         }
     }
 
