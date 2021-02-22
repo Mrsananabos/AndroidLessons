@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.fragment.musicItems;
+package com.example.myapplication.view.ui.fragment.musicItems;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -1,14 +1,15 @@
-package com.example.myapplication.ui.activity;
+package com.example.myapplication.view.ui.activity;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.myapplication.R;
-import com.example.myapplication.ui.fragment.menuItems.FragmentMenuItem;
-import com.example.myapplication.ui.fragment.musicItems.FragmentDetails;
-import com.example.myapplication.ui.fragment.musicItems.FragmentList;
+import com.example.myapplication.view.ui.fragment.menuItems.FragmentMenuItem;
+import com.example.myapplication.view.ui.fragment.musicItems.FragmentDetails;
+import com.example.myapplication.view.ui.fragment.musicItems.FragmentList;
 
 
 public class MainActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
