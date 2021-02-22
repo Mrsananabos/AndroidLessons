@@ -6,9 +6,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class SpacesItemDecoration extends RecyclerView.ItemDecoration {
     private int space;
+    private int column;
 
-    public SpacesItemDecoration(int space) {
+    public SpacesItemDecoration(int space, int column) {
         this.space = space;
+        this.column = column;
     }
 
     @Override
@@ -19,7 +21,7 @@ public class SpacesItemDecoration extends RecyclerView.ItemDecoration {
         outRect.bottom = space;
         outRect.top = space;
 
-        if (parent.getChildLayoutPosition(view) == 0 || parent.getChildLayoutPosition(view) == 1) {
+        if (parent.getChildLayoutPosition(view) < column) {
             outRect.top = 0;
         } else {
             outRect.top = space;

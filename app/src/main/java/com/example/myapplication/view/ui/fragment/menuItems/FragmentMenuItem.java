@@ -34,7 +34,7 @@ public class FragmentMenuItem extends Fragment {
     private void initList(View view) {
         RecyclerView rvItems = view.findViewById(R.id.rvItems);
         rvItems.setLayoutManager(new GridLayoutManager(view.getContext(), 2));
-        rvItems.addItemDecoration(new SpacesItemDecoration(30));
+        rvItems.addItemDecoration(new SpacesItemDecoration(30,2));
         AdapterMusicMenuItems adapter = new AdapterMusicMenuItems();
         rvItems.setAdapter(adapter);
         adapter.updateData(getData());
