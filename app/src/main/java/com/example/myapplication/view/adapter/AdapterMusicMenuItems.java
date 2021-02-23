@@ -6,6 +6,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+import com.bumptech.glide.signature.ObjectKey;
 import com.example.myapplication.R;
 import com.example.myapplication.model.MusicGenreData;
 
@@ -48,9 +51,12 @@ public class AdapterMusicMenuItems extends RecyclerView.Adapter<AdapterMusicMenu
         }
 
         public void setData(int position) {
-            vmmiBack.setImageResource(R.drawable.back_music_item);
-            vmmiIcon.setImageResource(R.drawable.ic_baseline_shuffle_24);
+            vmmiBack.setImageResource(R.drawable.bg_bottom_gradiend);
             vmmiName.setText(data.get(position).genreName);
+            Glide.with(itemView)
+                    .load("https://loremflickr.com/180/180")
+                    .apply(new RequestOptions().signature(new ObjectKey(System.currentTimeMillis())))
+                    .into(vmmiIcon);
         }
     }
 
